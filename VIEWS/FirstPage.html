@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META name = "viewport" content="width = device-width, initial-scale=1.0">
+        <title>
+            Old New Clothes
+        </title>
+        <link rel = "stylesheet" href= "../Static/MySite.css">
+        <script src  ="../Static/MySite.js"> </script>
+
+
+
+</head>
+<body onload="getLocation()">
+
+
+
+    <h1 class="Title">
+        Old New Clothes
+    </h1>
+    <h1>
+    <a >
+        <button class ="Button">
+            Log In
+        </button>
+    </a><br>
+    <a href="">
+        <button class ="Button">
+            Sign In
+        </button>
+    </a>
+</h1>
+
+
+
+
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+    
+</body>
+</html>
