@@ -1,36 +1,45 @@
 <!doctype html>
 <html>
 <head>
-    <META name = "viewport" content="width = device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "stylesheets/MySite.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+</head>
+<div class="Nav">
+    <nav>
+      <ul class="nav">
+        <li><a href="./">Home</a></li>
+        <li><a href="./login">Log in</a></li>
+        <li><a href="./signup">Sign In</a></li>
+      </ul>
+    </nav>
+  </div>
+<body>
     <title>
         Old New Clothes
     </title>
-    <link rel = "stylesheet" href= "../Static/MySite.css">
-    <script src  ="../Static/MySite.js"> </script>
-        
-</head>
-
-<body>
+    
    <div>
-    <h1 class = Title>
+    <h1 class=Title>
         Old New Clothes
     </h1>
    </div>
           
     <div>
-        <h2 class = SecondTitle>
+        <h2 class="SecondTitle">
             let's log in
         </h2>
     
     </div>
   
-    <div class = "grid-container"> 
+    <div class="grid-container"> 
         <div>
-            <form onsubmit="return  CheckForBlank()">
-                <label for = "User_Name" >Enter User Name</label><br>
-                <input type="text" id="User_Name" name = "User_Name"><br>
-                <label for = "User Password"> Enter Password</label><br>
-                <input type="password" id="User Password" name = User Password> <br>
+            <form  id="signIn_form">
+                <label for = "User_Email" >Enter User Email</label><br>
+                <input type="text" id="User_Email" name = "User_Email"><br>
+                <label for = "User_Password"> Enter Password</label><br>
+                <input type="password" id="User_Password" name = User_Password> <br>
                 <input type = "submit" id ="submit" name = Enter>
             </form>        
         </div>
@@ -38,6 +47,7 @@
         <div></div>
     </div>
 
+    <script src ="javascripts/MySite.js"></script>
 </body>
 
 
